@@ -5,5 +5,11 @@
 using namespace std;
 
 int main(int argc, const char** argv) {
+	ArgumentParser parser;
+
+	parser.addFinalArgument("file");
+
+	parser.parse(argc, argv);
+
 
 }
