@@ -17,6 +17,13 @@ int main(int argc, const char** argv) {
 	ifile.open(parser.retrieve<string>("file"), ios::in | ios::binary);
 
 	if (ifile.is_open()) {
+		for (int i = 0; i < 9; ++i)
+			cout << " ";
+
+		for (int i = 0; i < column; ++i)
+			cout << setfill('0') << setw(2) << hex << i << ' ';
+
+		cout << endl;
 
 
 		return 0;
